@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+        integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+        integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous">
+    </script>
+    <script src="https://kit.fontawesome.com/cffed4b148.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <form id="form">
+        <div class="header container-fluid">
+            <div class="row">
+                <div class="header__title col-md-6 col-6 d-flex justify-content-center align-items-center">Notes</div>
+                <div class="header__search col-md-6 col-6 d-flex justify-content-center align-items-center">
+                    <!-- <input type="search" class="header__search--box" placeholder="Search"> -->
+                </div>
+            </div>
+        </div>
+        <div class="content container-fluid">
+            <div class="content__noteArea col-md-12 d-flex justify-content-center align-items-center flex-column">
+                <input type="text" class="content__noteArea--input" placeholder="Take a note">
+                <button type="submit" role="textbox" class="content__noteAreap--submit">Add note</button>
+            </div>
+            <ul class="content__notes container-fluid">
+                <div id="content__notes" class="row d-flex justify-content-center align-items-center">
+                    <!-- <li class="content__notes--note col-md-3 m-2">Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit. Porro modi officia vero assumenda accusamus expedita quas labore harum facilis tempore!<i
+                            class="fa-solid fa-trash"></i></li> -->
+
+                </div>
+            </ul>
+        </div>
+    </form>
+    <script src="./script.js"></script>
+</body>
+
+</html>

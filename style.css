@@ -1,0 +1,154 @@
+* {
+    border-radius: 10px;
+    transition: .3s;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    background-color: #2C3333;
+    overflow-x: hidden;
+
+}
+
+.header {
+    padding: 10px;
+    height: 5vh;
+    margin-bottom: 5vh;
+    /* color: white; */
+    text-align: center;
+}
+
+.header__title,
+.header__search {
+    color: white;
+    height: 5vh;
+    /* text-align: center; */
+    /* transition: 3s; */
+
+
+}
+
+.header__search--box {
+    /* background: url(\f002); */
+    background-color: #F5F2E7;
+    width: 10vw;
+    text-align: center;
+    transition: .3s ease;
+}
+
+.header__search--box:focus::placeholder {
+    /* width: 100vw; */
+    color: transparent;
+
+}
+
+.header__search--box:focus {
+    width: 30vw;
+    outline: none;
+    color: black;
+    /* color: transparent; */
+
+}
+
+.content {
+    height: 80vh;
+}
+
+.content__textArea {
+    /* height: 50vh; */
+}
+
+.content__noteArea--input {
+    display: flex;
+    flex-direction: column;
+
+    height: 10vh;
+    width: 30vw;
+    /* text-align: center; */
+    margin-bottom: 5vh;
+    background-color: #F5F2E7;
+    /* box-shadow: none; */
+    border: none;
+    transition: .3s;
+    /* overflow-x: hidden; */
+    /* max-width: 30vw; */
+}
+
+.content__noteAreap--submit {
+    width: 10vw;
+    margin-bottom: 5vh;
+    outline: none;
+    border: 0;
+    border-radius: 20px;
+    height: 30px;
+    background-color: #2666CF;
+    color: white;
+}
+
+.content__noteAreap--submit:focus {
+    outline: none;
+}
+
+.content__noteAreap--submit:active {
+    transform: scale(.8);
+}
+
+.content__noteArea--input:focus {
+    /* position: sticky; */
+    width: 40vw;
+    height: 20vh;
+    top: 0;
+    bottom: 0;
+    outline: none;
+
+}
+
+.content__noteArea--input:focus::placeholder {
+    color: transparent;
+}
+
+.content__notes--note {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    list-style: none;
+    /* border: 1px solid black; */
+    height: auto;
+    /* position: relative; */
+    background-color: #F5F2E7;
+    /* margin: 20px; */
+}
+
+
+.fa-solid {
+    /* position: absolute; */
+    /* right: 10px; */
+    /* margin: 5px; */
+    /* top: 0; */
+    /* bottom: 0; */
+    color: #2666CF;
+}
+
+.fa-solid:active {
+    transform: scale(.8);
+}
+
+@media (max-width: 768px) {
+    .content__noteArea--input {
+        width: 80vw;
+    }
+
+    .content__noteAreap--submit {
+        width: 40vw;
+    }
+
+    .content__noteArea--input:focus {
+        /* position: sticky; */
+        width: 90vw;
+        height: 20vh;
+    }
+}
